@@ -1,12 +1,17 @@
-function Stories(username){
-    const srcImage = `./assets/img/${username.name}.svg`;
+import SetupStoriesPictures from './stories-logos/SetupStoriesPictures';
+function Stories(){
+    const data = ['9gag', 'meowed', 'barked', 'nathanwpylestrangeplanet', 
+    'wawawicomics', 'respondeai', 'filomoderna', 'memeriagourmet'];
     return (
-        <div className="story">
-            <div className="imagem">
-                <img src={srcImage} />
-            </div>
-            <div className="usuario">
-                {username.name}
+        <div className='stories'>
+            {data.map((item, index) => 
+                <div className='story'>
+                    <SetupStoriesPictures index={index}/>
+                    <div className="usuario">{item}</div>
+                </div>
+            )}
+            <div className="setinha">
+                <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
         </div>
     );

@@ -1,11 +1,12 @@
+import logo from "./assets/img/logo.png";
 function Header(){
-    return (
-      <div className='navbar'>
-        <div className="container">
+  return (
+      <header className='navbar'>
+        <nav className="container">
           <div className="logo">
             <ion-icon name="logo-instagram"></ion-icon>
             <div className="separador"></div>
-            <img src="assets/img/logo.png"/>
+            <img src={logo}/>
           </div>
 
           <div className="logo-mobile">
@@ -30,8 +31,9 @@ function Header(){
           <div className="icones-mobile">
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
-        </div>
-      </div>
-    );
+        </nav>
+      </header>
+  );
 }
+
 export default Header;

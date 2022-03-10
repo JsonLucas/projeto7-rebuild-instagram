@@ -1,19 +1,22 @@
-function UserPost(profile){
+import ProfilePublicationPicture from './publications-logos/SetupProfilePublicationPicture';
+import ContentPublication from './publications-logos/SetupContentPublication';
+import ProfileLogoLikes from './publications-logos/SetupProfileLogoLikes';
+function UserPost(){
+  const dataUser = ['meowed', 'barked'];
+  const likedBy = ['respondeai', 'adorable_animals'];
+  const moreLikes = ['101.523', '99.159'];
     return (
+      <div className='posts'>
+          {dataUser.map((item, index) => 
             <div className="post">
               <div className="topo">
-                <div className="usuario">
-                  <img src="assets/img/meowed.svg"/>
-                  {profile.username}
-                </div>
+                <ProfilePublicationPicture name={item} index={index}/>
                 <div className="acoes">
                   <ion-icon name="ellipsis-horizontal"></ion-icon>
                 </div>
               </div>
 
-              <div className="conteudo">
-                <img src="assets/img/gato-telefone.svg" />
-              </div>
+              <ContentPublication index={index}/>
 
               <div className="fundo">
                 <div className="acoes">
@@ -27,14 +30,11 @@ function UserPost(profile){
                   </div>
                 </div>
 
-                <div className="curtidas">
-                  <img src="assets/img/respondeai.svg" />
-                  <div className="texto">
-                    Curtido por <strong>{profile.likedBy}</strong> e <strong>outras {profile.moreLikes} pessoas</strong>
-                  </div>
-                </div>
+                <ProfileLogoLikes name={likedBy[index]} moreLikes={moreLikes[index]} index={index}/>
               </div>
             </div>
+          )}
+      </div>
     );
 }
 
