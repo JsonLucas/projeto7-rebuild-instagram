@@ -1,19 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import Header from './components/Header';
-import App from './App';
+import Body from './components/Body';
+import Mobile from './components/Mobile';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
+import './style.css';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Header />
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const root = document.querySelector('.root');
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+function renderApp(){
+  return(
+    <React.StrictMode>
+      <Header />
+      <Body />
+      <Mobile />
+    </React.StrictMode>
+  );
+}
+
+ReactDOM.render(renderApp(), root);
+
 reportWebVitals();

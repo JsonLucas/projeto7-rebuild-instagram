@@ -5,7 +5,7 @@ function Header(){
           <div className="logo">
             <ion-icon name="logo-instagram"></ion-icon>
             <div className="separador"></div>
-            <img src="assets/img/logo.png" alt='e'/>
+            <img src="assets/img/logo.png"/>
           </div>
 
           <div className="logo-mobile">

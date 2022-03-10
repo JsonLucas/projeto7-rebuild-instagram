@@ -1,5 +1,5 @@
 function Stories(username){
-    const srcImage = `assets/img/${username.name}.svg`;
+    const srcImage = `./assets/img/${username.name}.svg`;
     return (
         <div className="story">
             <div className="imagem">
