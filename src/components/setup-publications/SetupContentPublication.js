@@ -1,7 +1,5 @@
-import gatoTelefone from './logos/gato-telefone.svg';
-import dog from './logos/dog.svg';
 function SetupContentPublication(content){
-    const contentPost = [gatoTelefone, dog]; 
+    const contentPost = ['./images/gato-telefone.svg', './images/dog.svg']; 
     return(
         <div className="conteudo">
             <img src={contentPost[content.index]} />

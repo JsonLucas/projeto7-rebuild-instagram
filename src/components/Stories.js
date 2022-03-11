@@ -1,4 +1,4 @@
-import SetupStoriesPictures from './stories-logos/SetupStoriesPictures';
+import SetupStoriesPictures from './setup-stories/SetupStoriesPictures';
 function Stories(){
     const data = ['9gag', 'meowed', 'barked', 'nathanwpylestrangeplanet', 
     'wawawicomics', 'respondeai', 'filomoderna', 'memeriagourmet'];

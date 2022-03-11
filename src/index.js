@@ -4,8 +4,6 @@ import Header from './components/Header';
 import Body from './components/Body';
 import Mobile from './components/Mobile';
 import reportWebVitals from './reportWebVitals';
-import './index.css';
-import './style.css';
 
 const root = document.querySelector('.root');
 

@@ -1,6 +1,6 @@
-import ProfilePublicationPicture from './publications-logos/SetupProfilePublicationPicture';
-import ContentPublication from './publications-logos/SetupContentPublication';
-import ProfileLogoLikes from './publications-logos/SetupProfileLogoLikes';
+import ProfilePublicationPicture from './setup-publications/SetupProfilePublicationPicture';
+import ContentPublication from './setup-publications/SetupContentPublication';
+import ProfileLogoLikes from './setup-publications/SetupProfileLogoLikes';
 function UserPost(){
   const dataUser = ['meowed', 'barked'];
   const likedBy = ['respondeai', 'adorable_animals'];

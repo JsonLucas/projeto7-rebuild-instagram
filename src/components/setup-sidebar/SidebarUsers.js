@@ -1,6 +1,6 @@
-import SetupSuggestionsPictures from '../suggestions-logos/SetupSuggestionsPictures';
-import catana from '../assets/img/catanacomics.svg';
+import SetupSuggestionsPictures from '../setup-suggestions/SetupSuggestionsPictures';
 export function SidebarUsers(profile){
+    const catana = './images/catanacomics.svg';
     return(
         <div className="usuario">
         <img src={catana} />

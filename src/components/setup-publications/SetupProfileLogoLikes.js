@@ -1,7 +1,5 @@
-import respondeai from './logos/respondeai.svg';
-import adorableAnimals from './logos/adorable_animals.svg';
 function SetupProfileLogoLikes(content){
-    const logos = [respondeai, adorableAnimals];
+    const logos = ['./images/respondeai.svg', './images/adorable_animals.svg'];
     return(
         <div className="curtidas">
             <img src={logos[content.index]} />

@@ -1,5 +1,5 @@
-import logo from "./assets/img/logo.png";
 function Header(){
+  const logo = './images/logo.png';
   return (
       <header className='navbar'>
         <nav className="container">
@@ -14,7 +14,7 @@ function Header(){
           </div>
 
           <div className="instagram-mobile">
-            <img src="assets/img/logo.png" />
+            <img src={logo} />
           </div>
   
           <div className="pesquisa">

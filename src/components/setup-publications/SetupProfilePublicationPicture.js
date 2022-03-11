@@ -1,7 +1,5 @@
-import meowed from './logos/meowed.svg';
-import barked from './logos/barked.svg';
 function SetupProfilePublicationPicture(profile){
-    const logos = [meowed, barked];
+    const logos = ['./images/meowed.svg', './images/barked.svg'];
     return(
         <div className="usuario">
             <img src={logos[profile.index]}/>

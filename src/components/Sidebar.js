@@ -1,6 +1,6 @@
-import {SidebarUsers, SidebarSuggestions} from "./sidebar/SidebarUsers";
-import Links from "./sidebar/Links";
-import Copyright from "./sidebar/Copyright";
+import {SidebarUsers, SidebarSuggestions} from "./setup-sidebar/SidebarUsers";
+import Links from "./setup-sidebar/Links";
+import Copyright from "./setup-sidebar/Copyright";
 
 function Sidebar(){
     return(
