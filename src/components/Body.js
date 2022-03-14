@@ -3,13 +3,13 @@ import Sidebar from './Sidebar';
 import UserPost from './UserPost';
 function Body(){
     return (
-      <div className="corpo">
-        <div className="esquerda">
+      <section className="corpo">
+        <section className="esquerda">
           <Stories />
           <UserPost/>
-        </div>
+        </section>
         <Sidebar/>
-      </div>
+      </section>
     );
 }
 export default Body;

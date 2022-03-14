@@ -6,7 +6,7 @@ function UserPost(){
   const likedBy = ['respondeai', 'adorable_animals'];
   const moreLikes = ['101.523', '99.159'];
     return (
-      <div className='posts'>
+      <section className='posts'>
           {dataUser.map((item, index) => 
             <div className="post">
               <div className="topo">
@@ -34,7 +34,7 @@ function UserPost(){
               </div>
             </div>
           )}
-      </div>
+      </section>
     );
 }
 
